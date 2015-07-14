@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="SegueTransion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taylor Swift 00001" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-6b-dcY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL0-iF-nRq">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.61134785349999998" green="0.0" blue="0.61092639110000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gkw-pR-hqX"/>
+                                    <constraint firstAttribute="height" constant="30" id="rXQ-Qk-0x1"/>
+                                </constraints>
+                                <state key="normal" title="FIRE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="c5v-Mn-Yh8" kind="custom" identifier="firstSegue" customClass="FirstSegue" customModule="SegueTransion" customModuleProvider="target" id="1Ey-c0-84y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OCx-6b-dcY" secondAttribute="trailing" id="6JT-AP-s9g"/>
+                            <constraint firstItem="OCx-6b-dcY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Pys-JM-Cxp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OCx-6b-dcY" secondAttribute="bottom" id="QWq-zE-9VD"/>
+                            <constraint firstAttribute="centerX" secondItem="kL0-iF-nRq" secondAttribute="centerX" id="Vlp-bx-pV0"/>
+                            <constraint firstItem="OCx-6b-dcY" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="hor-QR-yuu"/>
+                            <constraint firstAttribute="centerY" secondItem="kL0-iF-nRq" secondAttribute="centerY" id="kiX-4r-v4R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tPC-Oz-b78">
+            <objects>
+                <viewController id="c5v-Mn-Yh8" customClass="SecondViewController" customModule="SegueTransion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HRp-yA-HK8"/>
+                        <viewControllerLayoutGuide type="bottom" id="RiE-uh-SnT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uec-Cb-0iM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taylor Swift 00006" translatesAutoresizingMaskIntoConstraints="NO" id="4no-it-MrT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RM-pj-pR4">
+                                <rect key="frame" x="504" y="28" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ljv-Rb-5Kz"/>
+                                    <constraint firstAttribute="width" constant="80" id="N8L-DX-wQP"/>
+                                </constraints>
+                                <state key="normal" title="DISMISS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shouldDismiss:" destination="c5v-Mn-Yh8" eventType="touchUpInside" id="2IL-Jd-WXW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4no-it-MrT" firstAttribute="top" secondItem="Uec-Cb-0iM" secondAttribute="top" id="Bwy-CO-Bca"/>
+                            <constraint firstAttribute="trailing" secondItem="4no-it-MrT" secondAttribute="trailing" id="F6T-Qn-YWU"/>
+                            <constraint firstItem="4no-it-MrT" firstAttribute="leading" secondItem="Uec-Cb-0iM" secondAttribute="leading" id="GfE-O8-tSd"/>
+                            <constraint firstItem="RiE-uh-SnT" firstAttribute="top" secondItem="4no-it-MrT" secondAttribute="bottom" id="jCj-5H-hTT"/>
+                            <constraint firstItem="6RM-pj-pR4" firstAttribute="top" secondItem="HRp-yA-HK8" secondAttribute="bottom" constant="8" id="rDl-CL-tbW"/>
+                            <constraint firstItem="6RM-pj-pR4" firstAttribute="trailing" secondItem="Uec-Cb-0iM" secondAttribute="trailingMargin" id="wMD-ay-jYn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="ha2-z3-k3A" kind="unwind" identifier="firstSegueUnwind" unwindAction="returnFromSegueActions:" id="ELD-K2-Ed9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTT-32-jgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ha2-z3-k3A" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Taylor Swift 00001" width="2059" height="3089"/>
+        <image name="Taylor Swift 00006" width="2759" height="4134"/>
+    </resources>
+</document>
